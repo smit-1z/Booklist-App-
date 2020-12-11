@@ -15,6 +15,7 @@ class UI {
 
         books.forEach((book) => UI.addBookToList(book));
     }
+    
     static addBookToList(book) {
         const list = document.querySelector("#book-list");
         const row = document.createElement('tr');
@@ -128,6 +129,8 @@ class Store {
     Store.removeBook
     (e.target.parentElement.previousElementSibling.textContent);
 
-
-
 })
+
+// Set Year
+
+document.getElementById("date").innerHTML = new Date().getFullYear();
